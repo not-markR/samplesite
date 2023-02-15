@@ -1,0 +1,271 @@
+:root{
+    --text-green-highlight:#6ABE52;
+    --text-light:#fff;
+    --text-dark:#020202;
+    --text-light-dimmed:#ffffffcc;
+    --bg-dark:#000000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-light);
+}
+.main-page{
+    min-height: 100vh;
+    background: linear-gradient(rgba(7, 7, 7, 0.2), rgba(0, 0, 0, 0.2)),
+    url(img/bg1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 30px;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+}
+.logo h1,.logo i{
+    font-size: 30px;
+}
+.main-slogan{
+    padding: 20px;
+    width: 900px ;
+}
+.main-slogan h1{
+    font-size: 70px;
+    margin-bottom: 20px;  
+}
+.main-slogan p{
+    font-size: 20px;
+    margin-bottom: 20px;  
+}
+.info-page{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(4, 5, 14);
+}
+.info-left{
+    width: 700px;
+}
+.info-left h1{
+margin-bottom: 20px;
+}
+.capsule-img{
+    width: 300px;
+}
+.green-text{
+    color: var(--text-green-highlight);
+}
+.info2-Page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--text-dark);
+    padding: 20px;
+}
+.info2-left,
+.info2-right{
+    height: 700px;
+    width: 500px;
+    padding: 10px;
+}
+.info2-left h1{
+    margin-bottom: 20px;
+    font-size: clamp(3.125rem, -1.8439rem + 9.9502vw, 4.375rem);
+}
+.info2-left h1::first-line{
+    color: var(--text-green-highlight);
+}
+.info2-right h1{
+    font-size: 30px;
+}
+.info2-right ul{
+    margin-left: 30px;
+}
+.info2-right ul li{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.quote{
+    min-height: auto;
+    color: var(--text-light);
+    background-color: var(--text-green-highlight);
+    padding: 20px;
+    font-size: clamp(0.75rem, 0.5888rem + 2.5788vw, 1.875rem);
+    margin-bottom: 30px;
+}
+
+
+.info3-page{
+    color: var(--text-dark);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.vlnteer-box{
+    border: 2px solid var(--text-green-highlight);
+    width: 400px;
+    border-radius: 20px;
+    margin: 10px;
+    flex-grow: 1;
+}
+.h1-bg-green{
+    background-color: var(--text-green-highlight);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.vlnteer-box ul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.vlnt-content{
+    padding: 20px;
+}
+.envi-org{
+    padding: 20px;
+    text-align: center;
+    color: var(--text-dark);
+}
+.envi-org h1{
+    font-size: 50px;
+    margin: 30px 0;
+}
+.org img{
+    width: 70%;
+    margin: 20px 0;
+}
+footer{
+    background-color: var(--bg-dark);
+    padding: 20px 10px;
+}
+.footer-link{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer-container a{
+    font-size: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #ffffffcc;
+}
+.footer-container a:hover{
+    color: #ffffff;
+}
+.footer-container h3{
+    color: var(--text-green-highlight);
+}
+
+.donate-btn,
+.volunteer-btn{
+    width: 90%;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+}
+.donate-btn{
+    background-color: var(--text-green-highlight);
+    color: #fff !important;
+}
+.volunteer-btn{
+    background-color: #fff;
+    color: #030303 !important;
+}
+.donate-btn:hover,
+.volunteer-btn:hover{
+    transform: scale(1.03);
+}
+.trademark{
+    color: #fff;
+    text-align: center;
+}
+@media screen and (max-width:798px){
+    body{
+        font-size: 14px;
+    }
+    .main-page{
+        padding: 10px;
+    }
+    .main-slogan h1{
+        font-size: clamp(2.1875rem, -4.4413rem + 17.6768vw, 4.375rem);
+    }
+    .main-slogan p{
+        font-size: clamp(0.875rem, -0.2614rem + 3.0303vw, 1.25rem);
+    }
+    .info-page{
+        display: block;
+        padding: 20px;
+    }
+    .info-left{
+        width: 100%;
+    }
+    .info-right{
+        display: flex;
+        justify-content: center;
+    }
+    .capsule-img{
+        width: 45%;
+        text-align: center;
+    }
+    .info2-Page{
+        height: auto;
+        display: block;
+    }
+    .info2-left h1{
+        font-size: 50px;
+    }
+    .info2-left,
+    .info2-right{
+        height: auto;
+        width: auto;
+        padding: 0 0 15px 0;
+    }
+    .envi-org{
+        text-align: left;
+    }
+    .envi-org h1{
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .org img{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .org h2{
+        font-size: 15px;
+    }
+    .footer-link{
+    grid-template-columns:1fr 1fr;
+    grid-gap: 40px;
+    }
+    .donate-btn,
+    .volunteer-btn{
+    width: 100%;
+    padding: 10px;
+    }
+}
